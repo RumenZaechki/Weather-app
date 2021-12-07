@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top">
+      <form id="form">
+        <fieldset>
+          <legend></legend>
+        </fieldset>
+        <div class="inner-form">
+          <input id="search" type="text" placeholder="Would you kindly type your location?" />
+          <button class="btn-search" type="submit">Search</button>
+        </div>
+      </form>
+    </div>
+    <main id="main-content">
+        <div id="today-container" class="content">
+          <div class="main">
+            <div class="sys">
+              <h2 id="name"></h2>
+              <h2 id="country"></h2>
+            </div>
+            <div class="descpt">
+              <div id="weatherIcon"></div>
+              <div id="weather"></div>
+            </div>
+            <div id="temperature"></div>
+            <div class="minMax">
+              <div id="temperatureMin"></div>
+              <div id="temperatureMax"></div>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="item">
+              <div id="feelsLike"></div>
+              <div id="wind">
+                <div id="windSpeed"></div>
+                <div id="windDeg"></div>
+              </div>
+            </div>
+            <div class="item">
+              <div id="pressure"></div>
+              <div id="humidity"></div>
+            </div>
+            <div class="item">
+              <div id="sunrise"></div>
+              <div id="sunset"></div>
+            </div>
+          </div>
+        </div>
+      <div id="week-container">
+        <ul id="daily-weather-container">
+
+        </ul>
+      </div>
+    </main>
+    <div class="footer">
+      <div class="containerFooter">
+      </div>
+    </div>
+  </div>
+</body>
+<script type="module" src="../src/app.js"></script>
+
+</html>
