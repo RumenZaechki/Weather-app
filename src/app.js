@@ -1,8 +1,6 @@
 import {
     Temperature,
     FeelsLike,
-    TempMax,
-    TempMin,
     Pressure,
     Humidity
 } from './temps.js';
@@ -27,8 +25,6 @@ document.querySelector("#form > div > button").addEventListener('click', async (
         let dataSys = { ...data.sys };
         ViewName(dataName);
         Temperature(dataTemperature);
-        TempMax(dataTemperature);
-        TempMin(dataTemperature);
         FeelsLike(dataTemperature);
         Pressure(dataTemperature);
         Humidity(dataTemperature);
