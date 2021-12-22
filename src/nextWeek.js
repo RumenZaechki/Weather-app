@@ -12,7 +12,7 @@ export async function nextWeek(data) {
         const pDescription = document.createElement('p');
         pDescription.textContent = d.weather[0].description;
         const pTemp = document.createElement('p');
-        pTemp.textContent = `${d.temp.min}°C / ${d.temp.max}°C`;
+        pTemp.textContent = `${Math.round(d.temp.min)}°C / ${Math.round(d.temp.max)}°C`;
 
         li.appendChild(pDayName);
         li.appendChild(img);
