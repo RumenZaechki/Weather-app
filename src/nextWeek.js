@@ -1,5 +1,6 @@
 export async function nextWeek(data) {
     const weekContainer = document.getElementById('daily-weather-container');
+    weekContainer.innerHTML = '';
     data.forEach(d => {
         const li = document.createElement('li');
         li.setAttribute('class', 'daily-weather-li')
