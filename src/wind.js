@@ -4,7 +4,7 @@ export function Speed(wind) {
 }
 export function Deg(wind) {
     const deg = wind.deg;
-    document.getElementById('windDeg').innerHTML = "  " + Bearing(deg);
+    document.getElementById('windDeg').innerHTML = `Wind direction:  ${Bearing(deg)}`;
 }
 export function Bearing(deg) {
     var val = Math.floor(deg / 22.5 + 0.5);

@@ -27,7 +27,6 @@ document.querySelector("#form > div > button").addEventListener('click', async (
             notify('Something went wrong. Would you kindly try again?');
         }
         else {
-
             ViewName(dataName);
             Temperature(dataTemperature);
             FeelsLike(dataTemperature);
